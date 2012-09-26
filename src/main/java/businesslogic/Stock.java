@@ -1,0 +1,47 @@
+// Business logic tier
+package main.java.businesslogic;
+
+import main.java.presentation.*;
+import main.java.persistence.*;
+
+public class Stock {
+    private String symbol;
+    private String fullName;
+    private String info;
+
+    public Stock(String symbol, String fullName, String info) {
+    	this.symbol = symbol;
+        this.fullName = fullName;
+        this.info = info;
+    }
+
+    // default constructor
+    public Stock() {
+        this.symbol = "EMC";
+        this.fullName = "EMC Corporation";
+        this.info = "28.75";
+    }
+
+    // getter methods
+    public String getSymbol() {
+        return symbol;
+    }
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
+    }    
+    
+    public String getFullName(){
+        return fullName;
+    }
+    public void getFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public String getInfo() {
+        return info;
+    }
+    public void setInfo(String info) {
+        this.info = info;
+    }
+   
+}
