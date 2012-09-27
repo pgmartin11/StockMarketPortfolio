@@ -7,13 +7,14 @@ import main.java.businesslogic.*;
 
 import java.util.*;
 
+//todo comment class
 public class Person {
 
     private String name;
     private String email;
     private List symbol;
 
-    // constructor
+    // constructor         todo use JavaDoc
     public Person(String name, String email, List symbol) {
         this.name = name;
         this.email = email;
@@ -30,7 +31,7 @@ public class Person {
         this.symbol = al;
     }
 
-    // getter methods
+    // getter methods          todo use JavaDoc
     public String getName(){
         return name;
     }
@@ -52,7 +53,7 @@ public class Person {
         this.email = emailAddress;
     }
 
-    public void setSymbols(List al) {
+    public void setSymbols(List al) {           // todo use whole words for variable names they are much easier to read.
         this.symbol = al;
     }
 
@@ -68,7 +69,7 @@ public class Person {
         System.out.println("I saved a person object!");
     }
 
-    private Person getUser(Person p) {
+    private Person getUser(Person p) {      // todo use whole words for variable names they are much easier to read.
         return p;
     }
 
