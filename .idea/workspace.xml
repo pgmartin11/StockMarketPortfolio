@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87433678-35e1-4379-87e5-4b60286145e6" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/persistence/EmailAddressException.java" afterPath="$PROJECT_DIR$/src/main/java/edu/uml/project90308/persistence/EmailAddressException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/persistence/NameException.java" afterPath="$PROJECT_DIR$/src/main/java/edu/uml/project90308/persistence/NameException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/main/java/presistence/TestPerson.java" afterPath="$PROJECT_DIR$/src/test/java/edu/uml/project90308/presistence/TestPerson.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/edu/uml/project90308/presistence/DeleteMeToo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StockMarketPortfolio.iml" afterPath="$PROJECT_DIR$/StockMarketPortfolio.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/uml/project90308/businesslogic/Authenticate.java" afterPath="$PROJECT_DIR$/src/main/java/edu/uml/project90308/businesslogic/Authenticate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/uml/project90308/persistence/Person.java" afterPath="$PROJECT_DIR$/src/main/java/edu/uml/project90308/persistence/Person.java" />
     </list>
     <ignored path="pm-StockMarketPortfolio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -126,28 +120,37 @@
       <file leaf-file-name="NotesFromSpencer.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NotesFromSpencer.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="81" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0">
+            <state line="6" column="0" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestPerson.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AllanDeleteMe.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/edu/uml/project90308/presistence/AllanDeleteMe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="26" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeleteMeToo.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/edu/uml/project90308/presistence/DeleteMeToo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="24" selection-start="218" selection-end="218" vertical-scroll-proportion="0.14240506">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestPerson.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/uml/project90308/presistence/TestPerson.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="18" selection-start="368" selection-end="368" vertical-scroll-proportion="0.23734178">
+            <state line="15" column="18" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/readme.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -165,7 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/NotesFromSpencer.txt" />
         <option value="$PROJECT_DIR$/src/test/main/java/presistence/TestPerson.java" />
         <option value="$PROJECT_DIR$/src/main/java/persistence/NameException.java" />
         <option value="$PROJECT_DIR$/src/main/java/persistence/Person.java" />
@@ -175,6 +177,7 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/uml/project90308/persistence/Person.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/uml/project90308/businesslogic/presistence/TestPerson.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/uml/project90308/presistence/TestPerson.java" />
+        <option value="$PROJECT_DIR$/NotesFromSpencer.txt" />
       </list>
     </option>
   </component>
@@ -698,7 +701,15 @@
       <created>1349219501786</created>
       <updated>1349219501787</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="spencer fixes up what he broke last time (lesson - always pull before pushing)">
+      <created>1349220776807</created>
+      <updated>1349220776807</updated>
+    </task>
+    <task id="LOCAL-00008" summary="spencer shows allan how to add a file. (and also check in his notes changes)">
+      <created>1349221124358</created>
+      <updated>1349221124359</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -767,7 +778,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="spencer fixes up what he broke last time (lesson - always pull before pushing)" />
+    <option name="LAST_COMMIT_MESSAGE" value="spencer shows allan how to add a file. (and also check in his notes changes)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -783,6 +794,7 @@
     <MESSAGE value="spencer's comments" />
     <MESSAGE value="spencer adds allan's work. the price? answer the questions in the todo comments and complete the class documentation!" />
     <MESSAGE value="spencer fixes up what he broke last time (lesson - always pull before pushing)" />
+    <MESSAGE value="spencer shows allan how to add a file. (and also check in his notes changes)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -795,13 +807,6 @@
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NotesFromSpencer.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="81" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/Exception.class">
@@ -850,10 +855,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/uml/project90308/presistence/TestPerson.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="18" selection-start="368" selection-end="368" vertical-scroll-proportion="0.23734178">
+        <state line="15" column="18" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NotesFromSpencer.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/uml/project90308/presistence/AllanDeleteMe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="26" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/uml/project90308/presistence/DeleteMeToo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="24" selection-start="218" selection-end="218" vertical-scroll-proportion="0.14240506">
+          <folding />
         </state>
       </provider>
     </entry>
