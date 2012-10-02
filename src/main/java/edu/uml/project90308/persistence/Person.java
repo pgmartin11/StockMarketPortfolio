@@ -31,11 +31,11 @@ public class Person {
     // default constructor
     public Person() {
 
-        //List al = new ArrayList();
+        List al = new ArrayList();
 
         this.name   = "Your Mamma";
         this.email  = "noEmail@studentl.uml.edu";
-        //this.symbol = al;
+        this.symbol = al;
     }
 
     // getter methods          todo use JavaDoc

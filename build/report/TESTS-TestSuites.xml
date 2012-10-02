@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="peters-powermac-5.local" id="0" name="AuthenticateTest" package="edu.uml.project90308.businesslogic" tests="2" time="0.058" timestamp="2012-10-01T20:05:25">
+  <testsuite errors="0" failures="0" hostname="peters-powermac-5.local" id="0" name="AuthenticateTest" package="edu.uml.project90308.businesslogic" tests="2" time="0.051" timestamp="2012-10-01T21:52:44">
       <properties>
           <property name="java.vendor" value="Apple Inc." />
 
@@ -102,7 +102,7 @@
 
           <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.uml.project90308.businesslogic.AuthenticateTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/report/TEST-edu.uml.project90308.businesslogic.AuthenticateTest.xml crashfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junitvmwatcher7528515944397214712.properties propsfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junit2964656927330007818.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.uml.project90308.businesslogic.AuthenticateTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/report/TEST-edu.uml.project90308.businesslogic.AuthenticateTest.xml crashfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junitvmwatcher2619258142260500384.properties propsfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junit4333477627288787139.properties" />
 
           <property name="java.class.path" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/classes:/Users/pgmartin/UML/90.308/StockMarketPortfolio/lib/junit-4.11-SNAPSHOT-20120416-1530.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant-launcher.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant-junit.jar" />
 
@@ -159,6 +159,344 @@
       <testcase classname="edu.uml.project90308.businesslogic.AuthenticateTest" name="testAuthenticateConstruction" time="0.0010" />
 
       <testcase classname="edu.uml.project90308.businesslogic.AuthenticateTest" name="testProcessLoginPositive" time="0.0" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="peters-powermac-5.local" id="1" name="StockInfoTest" package="edu.uml.project90308.businesslogic" tests="7" time="0.053" timestamp="2012-10-01T21:52:45">
+      <properties>
+          <property name="java.vendor" value="Apple Inc." />
+
+          <property name="lib.dir" value="lib" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar" />
+
+          <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+
+          <property name="ant.home" value="/Applications/IntelliJ IDEA 11.app/lib/ant" />
+
+          <property name="java.runtime.version" value="1.6.0_35-b10-428-10M3811" />
+
+          <property name="user.name" value="pgmartin" />
+
+          <property name="awt.nativeDoubleBuffering" value="true" />
+
+          <property name="build.dir" value="build" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries" />
+
+          <property name="ant.project.default-target" value="all" />
+
+          <property name="ant.project.name" value="Stock Market Porfolio" />
+
+          <property name="java.version" value="1.6.0_35" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="MacRoman" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="classes.dir" value="build/classes" />
+
+          <property name="java.class.version" value="50.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/build.xml" />
+
+          <property name="os.version" value="10.6.8" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="20.10-b01-428" />
+
+          <property name="report.dir" value="build/report" />
+
+          <property name="ant.library.dir" value="/Applications/IntelliJ IDEA 11.app/lib/ant/lib" />
+
+          <property name="java.awt.printerjob" value="apple.awt.CPrinterJob" />
+
+          <property name="ant.file.Stock Market Porfolio" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/build.xml" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="awt.toolkit" value="apple.awt.CToolkit" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="user.home" value="/Users/pgmartin" />
+
+          <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+
+          <property name="java.library.path" value="/Applications/IntelliJ IDEA 11.app/Contents/Resources/Java:/System/Library/PrivateFrameworks/JavaApplicationLauncher.framework/Resources:.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="java.vendor.url" value="http://www.apple.com/" />
+
+          <property name="java.vm.vendor" value="Apple Inc." />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.uml.project90308.businesslogic.StockInfoTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/report/TEST-edu.uml.project90308.businesslogic.StockInfoTest.xml crashfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junitvmwatcher3186644168640063211.properties propsfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junit2691645710695008430.properties" />
+
+          <property name="java.class.path" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/classes:/Users/pgmartin/UML/90.308/StockMarketPortfolio/lib/junit-4.11-SNAPSHOT-20120416-1530.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant-launcher.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant-junit.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="java.vm.specification.version" value="1.0" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/C6/C69vUlzAFyKat2YJ8MV6OU+++TI/-Tmp-/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.apple.com/" />
+
+          <property name="mrj.build" value="10M3811" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment" />
+
+          <property name="ant.file.type.Stock Market Porfolio" value="file" />
+
+          <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext" />
+
+          <property name="mrj.version" value="1060.1.6.0_35-428" />
+
+          <property name="user.dir" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="basedir" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio" />
+
+          <property name="ant.java.version" value="1.6" />
+
+          <property name="ant.core.lib" value="/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant.jar" />
+
+          <property name="file.encoding" value="MacRoman" />
+
+          <property name="java.specification.version" value="1.6" />
+
+          <property name="src.dir" value="src" />
+
+          <property name="ant.project.invoked-targets" value="test" />
+
+      </properties>
+
+      <testcase classname="edu.uml.project90308.businesslogic.StockInfoTest" name="testStockSymbol" time="0.0010" />
+
+      <testcase classname="edu.uml.project90308.businesslogic.StockInfoTest" name="testRemoveStockSymbol" time="0.0" />
+
+      <testcase classname="edu.uml.project90308.businesslogic.StockInfoTest" name="testeditStockInfo" time="0.0" />
+
+      <testcase classname="edu.uml.project90308.businesslogic.StockInfoTest" name="refreshQuote" time="0.0" />
+
+      <testcase classname="edu.uml.project90308.businesslogic.StockInfoTest" name="testStockInfoConstruction" time="0.0" />
+
+      <testcase classname="edu.uml.project90308.businesslogic.StockInfoTest" name="testAddStockSymbol" time="0.0" />
+
+      <testcase classname="edu.uml.project90308.businesslogic.StockInfoTest" name="testSearchStock" time="0.0" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="peters-powermac-5.local" id="2" name="StockTest" package="edu.uml.project90308.businesslogic" tests="1" time="0.05" timestamp="2012-10-01T21:52:46">
+      <properties>
+          <property name="java.vendor" value="Apple Inc." />
+
+          <property name="lib.dir" value="lib" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar" />
+
+          <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+
+          <property name="ant.home" value="/Applications/IntelliJ IDEA 11.app/lib/ant" />
+
+          <property name="java.runtime.version" value="1.6.0_35-b10-428-10M3811" />
+
+          <property name="user.name" value="pgmartin" />
+
+          <property name="awt.nativeDoubleBuffering" value="true" />
+
+          <property name="build.dir" value="build" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries" />
+
+          <property name="ant.project.default-target" value="all" />
+
+          <property name="ant.project.name" value="Stock Market Porfolio" />
+
+          <property name="java.version" value="1.6.0_35" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="MacRoman" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="classes.dir" value="build/classes" />
+
+          <property name="java.class.version" value="50.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/build.xml" />
+
+          <property name="os.version" value="10.6.8" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="20.10-b01-428" />
+
+          <property name="report.dir" value="build/report" />
+
+          <property name="ant.library.dir" value="/Applications/IntelliJ IDEA 11.app/lib/ant/lib" />
+
+          <property name="java.awt.printerjob" value="apple.awt.CPrinterJob" />
+
+          <property name="ant.file.Stock Market Porfolio" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/build.xml" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="awt.toolkit" value="apple.awt.CToolkit" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="user.home" value="/Users/pgmartin" />
+
+          <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+
+          <property name="java.library.path" value="/Applications/IntelliJ IDEA 11.app/Contents/Resources/Java:/System/Library/PrivateFrameworks/JavaApplicationLauncher.framework/Resources:.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="java.vendor.url" value="http://www.apple.com/" />
+
+          <property name="java.vm.vendor" value="Apple Inc." />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.uml.project90308.businesslogic.StockTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/report/TEST-edu.uml.project90308.businesslogic.StockTest.xml crashfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junitvmwatcher1484220279888897366.properties propsfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junit1671707896386317075.properties" />
+
+          <property name="java.class.path" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/classes:/Users/pgmartin/UML/90.308/StockMarketPortfolio/lib/junit-4.11-SNAPSHOT-20120416-1530.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant-launcher.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant-junit.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="java.vm.specification.version" value="1.0" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/C6/C69vUlzAFyKat2YJ8MV6OU+++TI/-Tmp-/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.apple.com/" />
+
+          <property name="mrj.build" value="10M3811" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment" />
+
+          <property name="ant.file.type.Stock Market Porfolio" value="file" />
+
+          <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext" />
+
+          <property name="mrj.version" value="1060.1.6.0_35-428" />
+
+          <property name="user.dir" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="basedir" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio" />
+
+          <property name="ant.java.version" value="1.6" />
+
+          <property name="ant.core.lib" value="/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant.jar" />
+
+          <property name="file.encoding" value="MacRoman" />
+
+          <property name="java.specification.version" value="1.6" />
+
+          <property name="src.dir" value="src" />
+
+          <property name="ant.project.invoked-targets" value="test" />
+
+      </properties>
+
+      <testcase classname="edu.uml.project90308.businesslogic.StockTest" name="testStockConstruction" time="0.0010" />
 
       <system-out><![CDATA[]]></system-out>
 

@@ -11,7 +11,10 @@ public class Authenticate {
 	}
 
 	public Person processLogin(String uname, String passwd) {
-		return new Person(uname, passwd);
+        if (true)
+		    return new Person(uname, passwd);
+        else
+            return null;
 	}
 
 	public void processLogout(Person person) {

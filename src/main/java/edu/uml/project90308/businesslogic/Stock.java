@@ -43,5 +43,12 @@ public class Stock {
     public void setInfo(String info) {
         this.info = info;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        return (o instanceof Stock)
+                && symbol.equals(((Stock) o).symbol)
+                && fullName.equals(((Stock) o).fullName);
+    }
    
 }

@@ -17,9 +17,6 @@ import edu.uml.project90308.persistence.Person;
 public class AuthenticateTest {
 
     private Person tPerson;
-    //private Calendar endOfSubscription;
-    //private BigDecimal rate;
-    //private SubscriptionPeriod subscriptionPeriod;
 
     @Before
     public void setup() {
