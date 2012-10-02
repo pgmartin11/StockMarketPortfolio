@@ -1,3 +1,13 @@
+
+==================== 10.2.12 notes ===
+
+be sure to fix all warnings
+
+
+
+
+
+==========================
 Your project description looks great. I think it will be challenging but not too hard.
 
 comments on the code I see here:
