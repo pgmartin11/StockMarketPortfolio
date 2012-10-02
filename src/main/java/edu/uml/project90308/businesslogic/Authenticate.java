@@ -1,14 +1,12 @@
-// Business logic tier
-package edu.uml.project90308.businesslogic;
+package edu.uml.project90308.businesslogic;// Business logic tier
 
-import edu.uml.project90308.presentation.*;
-import edu.uml.project90308.persistence.*;
+
+import edu.uml.project90308.persistence.Person;
 
 public class Authenticate {
 
 	public Authenticate() {
-		return;
-	}
+ 	}
 
 	public Person processLogin(String uname, String passwd) {
         if (true)

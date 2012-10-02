@@ -1,4 +1,4 @@
-package main.java.persistence;
+package edu.uml.project90308.persistence;
 
 /**
  * todo fill me in

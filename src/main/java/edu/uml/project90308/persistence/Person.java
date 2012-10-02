@@ -1,17 +1,6 @@
 // Persistence tier
 
-package main.java.persistence;
-
-
-
-/**
- * Created with IntelliJ IDEA.
- * User: seattlecamper
- * Date: 9/22/12
- * Time: 3:40 PM
- * To change this template use File | Settings | File Templates.
- */
-
+package edu.uml.project90308.persistence;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -56,6 +45,9 @@ public class Person {
         this.name = "Your mom";
         this.email = "mom@gmail.com";
         this.symbols = symbolList;
+    }
+
+    public Person(String uname, String passwd) {
     }
 
     /**

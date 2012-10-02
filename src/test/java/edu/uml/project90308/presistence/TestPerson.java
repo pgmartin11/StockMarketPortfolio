@@ -1,7 +1,6 @@
-package test.main.java.presistence;
+package edu.uml.project90308.presistence;
 
-import main.java.persistence.Person;
-import org.junit.After;
+import edu.uml.project90308.persistence.Person;
 import org.junit.Test;
 import java.util.ArrayList;
 import static org.junit.Assert.assertEquals;
