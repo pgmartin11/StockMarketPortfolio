@@ -154,6 +154,9 @@ public class Person {
     } // end isWhitespace
 
     /** method to save the Person object
+     * todo should i be trying to unit test saveUser and getUser?  I'm not sure how to write those tests up.
+     * todo maybe for this one I would create a Person, then try to save it?  I'm not sure how I would assert
+     * todo anything in this manner.
      *
      * @param person
      */
@@ -172,6 +175,10 @@ public class Person {
 
     /**
      * gets a Person object from file
+     * todo should i be trying to unit test saveUser and getUser?  I'm not sure how to write those tests up.
+     * todo maybe for this one i could create a file in the test using saveUser, then make sure I can retrieve it?
+     * todo I'm not sure how I use the assert here though.  Like I'm not sure how the test would do anything different
+     * todo than the actual method is doing.
      *
      * @param person
      * @return

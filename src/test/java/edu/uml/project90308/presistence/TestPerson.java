@@ -15,6 +15,12 @@ import static org.junit.Assert.assertEquals;
  */
 public class TestPerson {
 
+    /**
+     * todo I was wondering if this is how you to the teardown step, see last line in testGetName() below
+     * todo I have similar code in all the tests below
+     *
+     * @throws Exception
+     */
     @Test
     public void testGetName() throws Exception {
         Person instance = new Person();
@@ -24,6 +30,10 @@ public class TestPerson {
         instance = null;
     }
 
+    /**
+     *
+     * @throws Exception
+     */
     @Test
     public void testGetEmail() throws Exception {
         Person instance = new Person();
@@ -33,6 +43,10 @@ public class TestPerson {
         instance = null;
     }
 
+    /**
+     *
+     * @throws Exception
+     */
     @Test
     public void testGetSymbol() throws Exception {
         ArrayList<String> symbolList = new ArrayList();
@@ -46,6 +60,10 @@ public class TestPerson {
         instance = null;
     }
 
+    /**
+     *
+     * @throws Exception
+     */
     @Test
     public void testSetName() throws Exception {
         String name = "Buddy";
@@ -58,6 +76,10 @@ public class TestPerson {
         result = null;
     }
 
+    /**
+     *
+     * @throws Exception
+     */
     @Test
     public void testSetEmail() throws Exception {
         String emailAddress = "digdug@yahoo.com";
@@ -70,6 +92,10 @@ public class TestPerson {
         result = null;
     }
 
+    /**
+     *
+     * @throws Exception
+     */
     @Test
     public void testSetSymbols() throws Exception {
         ArrayList<String> symbol = new ArrayList();
@@ -83,17 +109,29 @@ public class TestPerson {
         instance = null;
     }
 
+    /**
+     * todo I was wondering how you would write a JUnit test for a method like this
+     * @throws Exception
+     */
     @Test
     public void testIsAllLetters() throws Exception {
 
 
     }
 
+    /**
+     *
+     * @throws Exception
+     */
     @Test
     public void testIsWhitespace() throws Exception {
 
     }
 
+    /**
+     *
+     * @throws Exception
+     */
     @Test
     public void testToString() throws Exception {
         Person instance = new Person();
