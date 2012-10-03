@@ -36,6 +36,11 @@ public class Person {
      * This constructor will auto-populate a new Person object.  So if no arguments are given, then this
      * constructor will create the Person object with the "default" values below
      */
+
+    /* TODO it is a really bad idea to provide construtors that allow you to create invalid instances of your class
+        use constructors to enforce the correct construction of your class by requiring the arguments needed to
+       properly initialize your class.
+    */
     public Person() {
 
         ArrayList symbolList = new ArrayList();
@@ -158,6 +163,8 @@ public class Person {
      * todo maybe for this one I would create a Person, then try to save it?  I'm not sure how I would assert
      * todo anything in this manner.
      *
+     *      * only test public methods, but make sure you   unit test the methods that call these private methods
+     *
      * @param person
      */
     private void saveUser(Person person) {
@@ -179,6 +186,9 @@ public class Person {
      * todo maybe for this one i could create a file in the test using saveUser, then make sure I can retrieve it?
      * todo I'm not sure how I use the assert here though.  Like I'm not sure how the test would do anything different
      * todo than the actual method is doing.
+     *
+     *
+     * only test public methids, but make sure you   unit test the methods that call these private methods
      *
      * @param person
      * @return
