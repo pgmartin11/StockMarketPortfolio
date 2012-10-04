@@ -1,4 +1,4 @@
-package edu.uml.project90308.presistence;
+package edu.uml.project90308.persistence;
 
 import edu.uml.project90308.persistence.NameException;
 import edu.uml.project90308.persistence.Person;
