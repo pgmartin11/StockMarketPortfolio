@@ -10,6 +10,26 @@
               description="Java class files compiled by this build script  go here"/>
     <property name="report.dir" value="${build.dir}${file.separator}report"
               description="this directory is used by JUnit. Test results are placed here in a nice HTML format"/>
+              
+    <!-- Deployment properties -->
+    <property name="web.dir"   value="web"/>
+    <property name="dist.dir"  value="dist"/>         
+          
+                   
+	<!-- Set up JAVA_HOME and JBOSS_HOME system wide environment variables, and
+			may use the following three lines to set jdk.home and jboss.home 
+	-->
+	<property environment="env"/> 
+	<property name="jdk.home" location="${env.JAVA_HOME}"/>  <!-- need this? -->
+	<property name="jboss.home" location="${env.JBOSS_HOME}"/> 
+				
+	<property name="jboss.deploy"		value="${jboss.home}/server/default/deploy/applications"/>
+	<property name="jboss.common.lib" 	value="${jboss.home}/common/lib"/>
+	<property name="jboss.server.lib" 	value="${jboss.home}/server/default/lib"/>
+	<property name="servlet.jar"  		value="${jboss.common.lib}/servlet-api.jar"/>
+	<property name="webapp.name" 		value="StockMarketPortfolio"/>
+	<property name="webapp.context.dir" value="${jboss.deploy}/${webapp.name}"/>
+	<echo message="webapp.context.dir:${webapp.context.dir}"/>
 
 
     <!-- this sets up the classpath for the project. Whenever you a .jar to the lib directory it will automatically be
@@ -29,12 +49,22 @@
         <delete dir="${classes.dir}"/>
         <delete dir="${report.dir}"/>
         <delete dir="${build.dir}"/>
+        	<!-- begin RSEG161 ant script code section --> 
+			<delete dir="${dist.dir}" />
+			<delete dir="${webapp.context.dir}" />
+			<delete file="${jboss.deploy}/StockMarketPortfolio.war"/>
+			<!-- end RSEG161 ant script code section -->
     </target>
 
     <target name="init" description="Build initialization - create output directories" depends="clean">
         <mkdir dir="${build.dir}"/>
         <mkdir dir="${classes.dir}"/>
         <mkdir dir="${report.dir}"/>
+        	<!-- begin RSEG161 ant script code section -->
+        	<mkdir dir="${dist.dir}" />
+        	<mkdir dir="${jboss.deploy}"/>
+			<mkdir dir="${webapp.context.dir}" />
+			<!-- end RSEG161 ant script code section -->
     </target>
 
     <target name="compile" description="Compile all the code; produce classes" depends="init">
@@ -70,12 +100,48 @@
          -->
         <fail if="test_failure" message="At least one JUnit test failed. Please see report."/>
 
-
     </target>
-
+    
+     
+	<!-- WAR rules -->
+	<target name="war" depends="compile">
+		<echo>building war...</echo>
+		<war warfile="${dist.dir}/StockMarketPortfolio.war" webxml="${web.dir}/WEB-INF/web.xml">
+			<fileset dir="${web.dir}">
+      	<patternset>
+        	<exclude name="**/WEB-INF/web.xml"/>
+					<include name="**/WEB-INF/jboss-web.xml"/>
+					<include name="**/*.html"/>
+					<include name="**/*.jpg"/>
+					<include name="**/*.gif"/>
+					<exclude name="**/*.java"/>
+        </patternset>
+      </fileset>
+			<fileset dir="${src.dir}">
+				<include name="**/*.jsp"/>
+				<include name="**/*.html"/>
+			</fileset>
+      <classes dir="${build.dir}"/>
+		</war>
+	</target>
+	
+	<!-- Deployment rule -->
+	<target name="deploy" depends="war">
+		<echo>copying war file to deployment dir...</echo>
+		<copy file="${dist.dir}/StockMarketPortfolio.war" todir="${jboss.deploy}" 
+			overwrite="true"/>
+	</target>
+	
+	<target name="explode" depends="deploy">
+	  <echo>Providing the exploded verison of war file in deployment dir...</echo>
+			<unwar src="${jboss.deploy}/StockMarketPortfolio.war"
+       	dest="${webapp.context.dir}">
+			</unwar>
+	</target>
+	
 
     <!-- this is the default target - it does everything -->
-    <target name="all" depends="init, clean, compile, test"
+    <target name="all" depends="init, clean, compile, test, war, deploy"
             description="deletes previous work, compiles new class, runs hello program"/>
 
 </project>
