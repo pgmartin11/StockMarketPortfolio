@@ -15,13 +15,6 @@ public class Stock {
         this.info = info;
     }
 
-    // default constructor
-    public Stock() {
-        this.symbol = "EMC";
-        this.fullName = "EMC Corporation";
-        this.info = "28.75";
-    }
-
     // getter methods
     public String getSymbol() {
         return symbol;
@@ -44,11 +37,4 @@ public class Stock {
         this.info = info;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        return (o instanceof Stock)
-                && symbol.equals(((Stock) o).symbol)
-                && fullName.equals(((Stock) o).fullName);
-    }
-   
 }

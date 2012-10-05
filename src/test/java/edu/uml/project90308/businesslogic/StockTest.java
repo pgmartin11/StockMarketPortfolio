@@ -14,17 +14,23 @@ import static org.junit.Assert.assertTrue;
 
 public class StockTest {
 
-    private Stock tStock;
+    private String testSymbol;
+    private String testFullName;
+    private String testInfo;
 
     @Before
     public void setup() {
-        tStock = new Stock();
+        testSymbol = "EMC";
+        testFullName = "EMC Corporation";
+        testInfo = "28.75";
     }
 
     @Test
     public void testStockConstruction() {
-        Stock stock = new Stock("EMC", "EMC Corporation", "28.75");
-        assertEquals("Stock Constructor was successful", stock, tStock);
+        Stock emc = new Stock("EMC", "EMC Corporation", "28.75");
+        assertEquals("Symbol", emc.getSymbol(), testSymbol);
+        assertEquals("fullName", emc.getFullName(), testFullName);
+        assertEquals("fullName", emc.getFullName(), testFullName);
     }
 
 }

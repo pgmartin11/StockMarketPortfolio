@@ -7,20 +7,15 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-/**
- * Created with IntelliJ IDEA.
- * User: pgmartin
- * Date: 10/1/12
- * Time: 5:44 PM
- * To change this template use File | Settings | File Templates.
- */
 public class StockInfoTest {
 
     private Stock tStock;
+    private StockInfo tStockInfo;
 
     @Before
     public void setup() {
-        tStock = new Stock();
+        tStock = new Stock("EMC", "EMC Corporation", "28.75");
+        tStockInfo = new StockInfo();
     }
 
     @Test
@@ -28,7 +23,10 @@ public class StockInfoTest {
     }
 
     @Test
-    public void testSearchStock() {
+    public void testSearchStockSymbol() {
+        Stock stock = tStockInfo.searchStockSymbol("EMC");
+        assertEquals("Symbol", stock.getSymbol(), tStock.getSymbol());
+        assertEquals("Full Name", stock.getFullName(), tStock.getFullName());
     }
 
     @Test
@@ -41,15 +39,20 @@ public class StockInfoTest {
 
 
     @Test
-    public void testeditStockInfo() {
+    public void testEditStockInfo() {
+        Stock stock = tStockInfo.searchStockSymbol("EMC");
+        assertEquals("Symbol", stock.getSymbol(), tStock.getSymbol());
+        assertEquals("Full Name", stock.getFullName(), tStock.getFullName());
     }
 
     @Test
-    public void testStockSymbol() {
+    public void testSelectStockSymbol() {
+        Stock stock = tStockInfo.searchStockSymbol("EMC");
+        assertEquals("Symbol", stock.getSymbol(), tStock.getSymbol());
     }
 
     @Test
-    public void refreshQuote() {
+    public void testRefreshQuote() {
     }
 
 }
