@@ -1,13 +1,13 @@
 <html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Unit Test Results: edu.uml.project90308.businesslogic.AuthenticateTest</title>
+<title>Unit Test Results: edu.uml.project90308.persistence.TestPerson</title>
 <link rel="stylesheet" type="text/css" title="Style" href="../../../../stylesheet.css">
 <script type="text/javascript" language="JavaScript">
         var TestCases = new Array();
         var cur;
         
-    cur = TestCases['edu.uml.project90308.businesslogic.AuthenticateTest'] = new Array();
+    cur = TestCases['edu.uml.project90308.persistence.TestPerson'] = new Array();
     
         cur['ant.core.lib'] = '/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant.jar';
     
@@ -184,7 +184,7 @@
     
         cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
     
-        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.uml.project90308.businesslogic.AuthenticateTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/report/TEST-edu.uml.project90308.businesslogic.AuthenticateTest.xml crashfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junitvmwatcher4676265670425819272.properties propsfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junit8913718588971995962.properties';
+        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.uml.project90308.persistence.TestPerson filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/report/TEST-edu.uml.project90308.persistence.TestPerson.xml crashfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junitvmwatcher7082433632478741565.properties propsfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junit2790213920339535960.properties';
     
         cur['sun.java.launcher'] = 'SUN_STANDARD';
     
@@ -193,6 +193,8 @@
         cur['sun.management.compiler'] = 'HotSpot 64-Bit Tiered Compilers';
     
         cur['sun.os.patch.level'] = 'unknown';
+    
+        cur['test_failure'] = 'true';
     
         cur['user.country'] = 'US';
     
@@ -249,13 +251,13 @@
 </tr>
 </table>
 <hr size="1">
-<h3>Class edu.uml.project90308.businesslogic.AuthenticateTest</h3>
+<h3>Class edu.uml.project90308.persistence.TestPerson</h3>
 <table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
 <tr valign="top">
 <th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
 </tr>
 <tr valign="top" class="Failure">
-<td><a title="Display all tests" href="0_AuthenticateTest.html">AuthenticateTest</a></td><td><a title="Display all tests" href="0_AuthenticateTest.html">2</a></td><td>0</td><td><a title="Display only failures" href="0_AuthenticateTest-fails.html">1</a></td><td>0.057</td><td>2012-10-05T20:53:51</td><td>peters-powermac-5.local</td>
+<td><a title="Display all tests" href="4_TestPerson.html">TestPerson</a></td><td><a title="Display all tests" href="4_TestPerson.html">9</a></td><td>0</td><td><a title="Display only failures" href="4_TestPerson-fails.html">2</a></td><td>0.068</td><td>2012-10-05T20:53:54</td><td>peters-powermac-5.local</td>
 </tr>
 </table>
 <h2>Tests</h2>
@@ -264,17 +266,41 @@
 <th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
 </tr>
 <tr valign="top" class="TableRowColor">
-<td><a name="testAuthenticateConstruction"></a>testAuthenticateConstruction</td><td>Success</td><td></td><td>0.002</td>
+<td><a name="testSetSymbols"></a>testSetSymbols</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetUserName"></a>testGetUserName</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetSymbol"></a>testGetSymbol</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetName"></a>testSetName</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testSetPassword"></a>testSetPassword</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetPassword"></a>testGetPassword</td><td>Success</td><td></td><td>0.000</td>
 </tr>
 <tr valign="top" class="Failure">
-<td><a name="testProcessLoginPositive"></a>testProcessLoginPositive</td><td>Failure</td><td>Authentication was successful expected: edu.uml.project90308.persistence.Person&lt;UserName: pgmartin, Password: pg.martin@rcn.com, Stock Symbol(s): null&gt; but was: edu.uml.project90308.persistence.Person&lt;UserName: pgmartin, Password: pg.martin@rcn.com, Stock Symbol(s): null&gt;<br>
+<td><a name="testToString"></a>testToString</td><td>Failure</td><td>expected:&lt;...W, Stock Symbol(s): [GOOG]&gt; but was:&lt;...W, Stock Symbol(s): [[GOOG]]&gt;<br>
 <br>
-<code>junit.framework.AssertionFailedError: Authentication was successful expected: edu.uml.project90308.persistence.Person&lt;UserName: pgmartin, Password: pg.martin@rcn.com, Stock Symbol(s): null&gt; but was: edu.uml.project90308.persistence.Person&lt;UserName: pgmartin, Password: pg.martin@rcn.com, Stock Symbol(s): null&gt;<br>	at edu.uml.project90308.businesslogic.AuthenticateTest.testProcessLoginPositive(AuthenticateTest.java:35)<br>
-</code></td><td>0.005</td>
+<code>junit.framework.AssertionFailedError: expected:&lt;...W, Stock Symbol(s): [GOOG]&gt; but was:&lt;...W, Stock Symbol(s): [[GOOG]]&gt;<br>	at edu.uml.project90308.persistence.TestPerson.testToString(TestPerson.java:127)<br>
+</code></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testIsAllLettersNegative"></a>testIsAllLettersNegative</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a name="testIsAllLetters"></a>testIsAllLetters</td><td>Failure</td><td>Expected exception: edu.uml.project90308.persistence.NameException<br>
+<br>
+<code>junit.framework.AssertionFailedError: Expected exception: edu.uml.project90308.persistence.NameException<br>
+</code></td><td>0.002</td>
 </tr>
 </table>
 <div class="Properties">
-<a href="javascript:displayProperties('edu.uml.project90308.businesslogic.AuthenticateTest');">
+<a href="javascript:displayProperties('edu.uml.project90308.persistence.TestPerson');">
                     Properties &raquo;
                 </a>
 </div>

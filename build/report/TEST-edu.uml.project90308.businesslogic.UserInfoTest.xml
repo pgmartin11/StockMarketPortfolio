@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="2" hostname="peters-powermac-5.local" name="edu.uml.project90308.persistence.TestPerson" tests="9" time="0.068" timestamp="2012-10-05T20:53:54">
+<testsuite errors="0" failures="0" hostname="peters-powermac-5.local" name="edu.uml.project90308.businesslogic.UserInfoTest" tests="3" time="0.055" timestamp="2012-10-05T20:53:53">
   <properties>
     <property name="java.vendor" value="Apple Inc." />
     <property name="lib.dir" value="lib" />
@@ -67,7 +67,7 @@
     <property name="java.vm.vendor" value="Apple Inc." />
     <property name="gopherProxySet" value="false" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.uml.project90308.persistence.TestPerson filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/report/TEST-edu.uml.project90308.persistence.TestPerson.xml crashfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junitvmwatcher7082433632478741565.properties propsfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junit2790213920339535960.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.uml.project90308.businesslogic.UserInfoTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/report/TEST-edu.uml.project90308.businesslogic.UserInfoTest.xml crashfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junitvmwatcher6568959171461848414.properties propsfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junit8640094538777599657.properties" />
     <property name="java.class.path" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/classes:/Users/pgmartin/UML/90.308/StockMarketPortfolio/lib/commons-io-2.4.jar:/Users/pgmartin/UML/90.308/StockMarketPortfolio/lib/junit-4.11-SNAPSHOT-20120416-1530.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant-launcher.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant-junit.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
     <property name="env.com.apple.java.jvmMode" value="client" />
@@ -104,22 +104,9 @@
     <property name="ant.project.invoked-targets" value="all" />
     <property name="webapp.name" value="StockMarketPortfolio" />
   </properties>
-  <testcase classname="edu.uml.project90308.persistence.TestPerson" name="testSetSymbols" time="0.0020" />
-  <testcase classname="edu.uml.project90308.persistence.TestPerson" name="testGetUserName" time="0.0" />
-  <testcase classname="edu.uml.project90308.persistence.TestPerson" name="testGetSymbol" time="0.0" />
-  <testcase classname="edu.uml.project90308.persistence.TestPerson" name="testSetName" time="0.0" />
-  <testcase classname="edu.uml.project90308.persistence.TestPerson" name="testSetPassword" time="0.0" />
-  <testcase classname="edu.uml.project90308.persistence.TestPerson" name="testGetPassword" time="0.0" />
-  <testcase classname="edu.uml.project90308.persistence.TestPerson" name="testToString" time="0.0060">
-    <failure message="expected:&lt;...W, Stock Symbol(s): [GOOG]&gt; but was:&lt;...W, Stock Symbol(s): [[GOOG]]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;...W, Stock Symbol(s): [GOOG]&gt; but was:&lt;...W, Stock Symbol(s): [[GOOG]]&gt;
-	at edu.uml.project90308.persistence.TestPerson.testToString(TestPerson.java:127)
-</failure>
-  </testcase>
-  <testcase classname="edu.uml.project90308.persistence.TestPerson" name="testIsAllLettersNegative" time="0.0" />
-  <testcase classname="edu.uml.project90308.persistence.TestPerson" name="testIsAllLetters" time="0.0020">
-    <failure message="Expected exception: edu.uml.project90308.persistence.NameException" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expected exception: edu.uml.project90308.persistence.NameException
-</failure>
-  </testcase>
+  <testcase classname="edu.uml.project90308.businesslogic.UserInfoTest" name="testSetUserName" time="0.0020" />
+  <testcase classname="edu.uml.project90308.businesslogic.UserInfoTest" name="testStockConstruction" time="0.0" />
+  <testcase classname="edu.uml.project90308.businesslogic.UserInfoTest" name="testSetPassword" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

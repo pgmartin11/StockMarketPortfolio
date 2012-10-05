@@ -1,8 +1,3 @@
-/**
- * User: pgmartin
- * Date: 10/1/12
- * Time: 5:12 PM
- */
 package edu.uml.project90308.businesslogic;
 
 import org.junit.Before;
