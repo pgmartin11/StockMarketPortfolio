@@ -9,18 +9,17 @@ import static org.junit.Assert.assertTrue;
 
 import edu.uml.project90308.persistence.Person;
 
-/**
- * User: pgmartin
- * Date: 10/1/12
- * Time: 1:06 PM
- */
 public class AuthenticateTest {
 
-    private Person tPerson;
+    private String tUserName;
+    private String tPasswd;
+    private UserInfo testUser;
 
     @Before
     public void setup() {
-        tPerson = new Person("pgmartin", "pg.martin@rcn.com");
+        tUserName = "pgmartin";
+        tPasswd = "pg.martin@rcn.com";
+        testUser = new UserInfo(tUserName, tPasswd);
     }
 
     @Test
@@ -30,9 +29,10 @@ public class AuthenticateTest {
 
     @Test
     public void testProcessLoginPositive() {
-        Authenticate tAuthenticate = new Authenticate();
-        Person person = tAuthenticate.processLogin("pgmartin", "pg.martin@rcn.com");
-        assertEquals("Authentication was successful", person, tPerson);
+        Authenticate testAuthenticate = new Authenticate();
+        UserInfo uInfo = testAuthenticate.processLogin(tUserName, tPasswd);
+        assertEquals("Authentication successful: userName", testUser.getUserName(), uInfo.getUserName());
+        assertEquals("Authentication successful: password", testUser.getPassword(), uInfo.getPassword());
     }
 
 }

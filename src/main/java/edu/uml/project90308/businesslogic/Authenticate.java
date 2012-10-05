@@ -8,14 +8,14 @@ public class Authenticate {
 	public Authenticate() {
  	}
 
-	public Person processLogin(String uname, String passwd) {
+	public UserInfo processLogin(String uname, String passwd) {
         if (true)
-		    return new Person(uname, passwd);
+		    return new UserInfo(uname, passwd);
         else
             return null;
 	}
 
-	public void processLogout(Person person) {
+	public void processLogout(UserInfo user) {
 		return;
 	}
 	

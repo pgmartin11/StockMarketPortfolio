@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="1" hostname="peters-powermac-5.local" id="0" name="AuthenticateTest" package="edu.uml.project90308.businesslogic" tests="2" time="0.057" timestamp="2012-10-05T20:53:51">
+  <testsuite errors="0" failures="0" hostname="peters-powermac-5.local" id="0" name="AuthenticateTest" package="edu.uml.project90308.businesslogic" tests="2" time="0.052" timestamp="2012-10-05T21:28:16">
       <properties>
           <property name="java.vendor" value="Apple Inc." />
 
@@ -21,8 +21,6 @@
           <property name="ant.home" value="/Applications/IntelliJ IDEA 11.app/lib/ant" />
 
           <property name="java.runtime.version" value="1.6.0_35-b10-428-10M3811" />
-
-          <property name="env.JAVA_MAIN_CLASS_42959" value="com.intellij.rt.ant.execution.AntMain2" />
 
           <property name="env.Apple_PubSub_Socket_Render" value="/tmp/launch-wTM1qf/Render" />
 
@@ -51,6 +49,8 @@
           <property name="ant.project.default-target" value="all" />
 
           <property name="ant.project.name" value="Stock Market Porfolio" />
+
+          <property name="env.JAVA_MAIN_CLASS_43100" value="com.intellij.rt.ant.execution.AntMain2" />
 
           <property name="java.version" value="1.6.0_35" />
 
@@ -132,7 +132,7 @@
 
           <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.uml.project90308.businesslogic.AuthenticateTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/report/TEST-edu.uml.project90308.businesslogic.AuthenticateTest.xml crashfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junitvmwatcher4676265670425819272.properties propsfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junit8913718588971995962.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.uml.project90308.businesslogic.AuthenticateTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/report/TEST-edu.uml.project90308.businesslogic.AuthenticateTest.xml crashfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junitvmwatcher6761673385096118085.properties propsfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junit7385837339808936405.properties" />
 
           <property name="java.class.path" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/classes:/Users/pgmartin/UML/90.308/StockMarketPortfolio/lib/commons-io-2.4.jar:/Users/pgmartin/UML/90.308/StockMarketPortfolio/lib/junit-4.11-SNAPSHOT-20120416-1530.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant-launcher.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant-junit.jar" />
 
@@ -206,21 +206,16 @@
 
       </properties>
 
-      <testcase classname="edu.uml.project90308.businesslogic.AuthenticateTest" name="testAuthenticateConstruction" time="0.0020" />
+      <testcase classname="edu.uml.project90308.businesslogic.AuthenticateTest" name="testAuthenticateConstruction" time="0.0010" />
 
-      <testcase classname="edu.uml.project90308.businesslogic.AuthenticateTest" name="testProcessLoginPositive" time="0.0050">
-          <failure message="Authentication was successful expected: edu.uml.project90308.persistence.Person&lt;UserName: pgmartin, Password: pg.martin@rcn.com, Stock Symbol(s): null&gt; but was: edu.uml.project90308.persistence.Person&lt;UserName: pgmartin, Password: pg.martin@rcn.com, Stock Symbol(s): null&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Authentication was successful expected: edu.uml.project90308.persistence.Person&lt;UserName: pgmartin, Password: pg.martin@rcn.com, Stock Symbol(s): null&gt; but was: edu.uml.project90308.persistence.Person&lt;UserName: pgmartin, Password: pg.martin@rcn.com, Stock Symbol(s): null&gt;
-	at edu.uml.project90308.businesslogic.AuthenticateTest.testProcessLoginPositive(AuthenticateTest.java:35)
-</failure>
-
-      </testcase>
+      <testcase classname="edu.uml.project90308.businesslogic.AuthenticateTest" name="testProcessLoginPositive" time="0.0" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="peters-powermac-5.local" id="1" name="StockInfoTest" package="edu.uml.project90308.businesslogic" tests="7" time="0.054" timestamp="2012-10-05T20:53:51">
+  <testsuite errors="0" failures="0" hostname="peters-powermac-5.local" id="1" name="StockInfoTest" package="edu.uml.project90308.businesslogic" tests="7" time="0.054" timestamp="2012-10-05T21:28:17">
       <properties>
           <property name="java.vendor" value="Apple Inc." />
 
@@ -241,8 +236,6 @@
           <property name="ant.home" value="/Applications/IntelliJ IDEA 11.app/lib/ant" />
 
           <property name="java.runtime.version" value="1.6.0_35-b10-428-10M3811" />
-
-          <property name="env.JAVA_MAIN_CLASS_42959" value="com.intellij.rt.ant.execution.AntMain2" />
 
           <property name="env.Apple_PubSub_Socket_Render" value="/tmp/launch-wTM1qf/Render" />
 
@@ -271,6 +264,8 @@
           <property name="ant.project.default-target" value="all" />
 
           <property name="ant.project.name" value="Stock Market Porfolio" />
+
+          <property name="env.JAVA_MAIN_CLASS_43100" value="com.intellij.rt.ant.execution.AntMain2" />
 
           <property name="java.version" value="1.6.0_35" />
 
@@ -309,8 +304,6 @@
           <property name="ant.file" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/build.xml" />
 
           <property name="os.version" value="10.6.8" />
-
-          <property name="test_failure" value="true" />
 
           <property name="path.separator" value=":" />
 
@@ -354,7 +347,7 @@
 
           <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.uml.project90308.businesslogic.StockInfoTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/report/TEST-edu.uml.project90308.businesslogic.StockInfoTest.xml crashfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junitvmwatcher7211767849089707132.properties propsfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junit4126260805788866278.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.uml.project90308.businesslogic.StockInfoTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/report/TEST-edu.uml.project90308.businesslogic.StockInfoTest.xml crashfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junitvmwatcher6312261707672840305.properties propsfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junit3249262960793639388.properties" />
 
           <property name="java.class.path" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/classes:/Users/pgmartin/UML/90.308/StockMarketPortfolio/lib/commons-io-2.4.jar:/Users/pgmartin/UML/90.308/StockMarketPortfolio/lib/junit-4.11-SNAPSHOT-20120416-1530.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant-launcher.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant-junit.jar" />
 
@@ -394,9 +387,9 @@
 
           <property name="ant.file.type.Stock Market Porfolio" value="file" />
 
-          <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext" />
-
           <property name="jboss.server.lib" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/${env.JBOSS_HOME}/server/default/lib" />
+
+          <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext" />
 
           <property name="env.com.apple.java.jvmTask" value="BundledApp.java" />
 
@@ -428,7 +421,7 @@
 
       </properties>
 
-      <testcase classname="edu.uml.project90308.businesslogic.StockInfoTest" name="testRemoveStockSymbol" time="0.0020" />
+      <testcase classname="edu.uml.project90308.businesslogic.StockInfoTest" name="testRemoveStockSymbol" time="0.0010" />
 
       <testcase classname="edu.uml.project90308.businesslogic.StockInfoTest" name="testEditStockInfo" time="0.0" />
 
@@ -436,18 +429,18 @@
 
       <testcase classname="edu.uml.project90308.businesslogic.StockInfoTest" name="testStockInfoConstruction" time="0.0" />
 
-      <testcase classname="edu.uml.project90308.businesslogic.StockInfoTest" name="testSelectStockSymbol" time="0.0010" />
+      <testcase classname="edu.uml.project90308.businesslogic.StockInfoTest" name="testSelectStockSymbol" time="0.0" />
 
       <testcase classname="edu.uml.project90308.businesslogic.StockInfoTest" name="testAddStockSymbol" time="0.0" />
 
-      <testcase classname="edu.uml.project90308.businesslogic.StockInfoTest" name="testSearchStockSymbol" time="0.0010" />
+      <testcase classname="edu.uml.project90308.businesslogic.StockInfoTest" name="testSearchStockSymbol" time="0.0" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="peters-powermac-5.local" id="2" name="StockTest" package="edu.uml.project90308.businesslogic" tests="1" time="0.05" timestamp="2012-10-05T20:53:52">
+  <testsuite errors="0" failures="0" hostname="peters-powermac-5.local" id="2" name="StockTest" package="edu.uml.project90308.businesslogic" tests="1" time="0.051" timestamp="2012-10-05T21:28:18">
       <properties>
           <property name="java.vendor" value="Apple Inc." />
 
@@ -468,8 +461,6 @@
           <property name="ant.home" value="/Applications/IntelliJ IDEA 11.app/lib/ant" />
 
           <property name="java.runtime.version" value="1.6.0_35-b10-428-10M3811" />
-
-          <property name="env.JAVA_MAIN_CLASS_42959" value="com.intellij.rt.ant.execution.AntMain2" />
 
           <property name="env.Apple_PubSub_Socket_Render" value="/tmp/launch-wTM1qf/Render" />
 
@@ -498,6 +489,8 @@
           <property name="ant.project.default-target" value="all" />
 
           <property name="ant.project.name" value="Stock Market Porfolio" />
+
+          <property name="env.JAVA_MAIN_CLASS_43100" value="com.intellij.rt.ant.execution.AntMain2" />
 
           <property name="java.version" value="1.6.0_35" />
 
@@ -536,8 +529,6 @@
           <property name="ant.file" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/build.xml" />
 
           <property name="os.version" value="10.6.8" />
-
-          <property name="test_failure" value="true" />
 
           <property name="path.separator" value=":" />
 
@@ -581,7 +572,7 @@
 
           <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.uml.project90308.businesslogic.StockTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/report/TEST-edu.uml.project90308.businesslogic.StockTest.xml crashfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junitvmwatcher3248526585859478586.properties propsfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junit1232994583935747859.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.uml.project90308.businesslogic.StockTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/report/TEST-edu.uml.project90308.businesslogic.StockTest.xml crashfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junitvmwatcher8400074405082083229.properties propsfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junit2314754441808769103.properties" />
 
           <property name="java.class.path" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/classes:/Users/pgmartin/UML/90.308/StockMarketPortfolio/lib/commons-io-2.4.jar:/Users/pgmartin/UML/90.308/StockMarketPortfolio/lib/junit-4.11-SNAPSHOT-20120416-1530.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant-launcher.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant-junit.jar" />
 
@@ -621,9 +612,9 @@
 
           <property name="ant.file.type.Stock Market Porfolio" value="file" />
 
-          <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext" />
-
           <property name="jboss.server.lib" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/${env.JBOSS_HOME}/server/default/lib" />
+
+          <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext" />
 
           <property name="env.com.apple.java.jvmTask" value="BundledApp.java" />
 
@@ -662,7 +653,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="peters-powermac-5.local" id="3" name="UserInfoTest" package="edu.uml.project90308.businesslogic" tests="3" time="0.055" timestamp="2012-10-05T20:53:53">
+  <testsuite errors="0" failures="0" hostname="peters-powermac-5.local" id="3" name="UserInfoTest" package="edu.uml.project90308.businesslogic" tests="3" time="0.055" timestamp="2012-10-05T21:28:19">
       <properties>
           <property name="java.vendor" value="Apple Inc." />
 
@@ -683,8 +674,6 @@
           <property name="ant.home" value="/Applications/IntelliJ IDEA 11.app/lib/ant" />
 
           <property name="java.runtime.version" value="1.6.0_35-b10-428-10M3811" />
-
-          <property name="env.JAVA_MAIN_CLASS_42959" value="com.intellij.rt.ant.execution.AntMain2" />
 
           <property name="env.Apple_PubSub_Socket_Render" value="/tmp/launch-wTM1qf/Render" />
 
@@ -713,6 +702,8 @@
           <property name="ant.project.default-target" value="all" />
 
           <property name="ant.project.name" value="Stock Market Porfolio" />
+
+          <property name="env.JAVA_MAIN_CLASS_43100" value="com.intellij.rt.ant.execution.AntMain2" />
 
           <property name="java.version" value="1.6.0_35" />
 
@@ -751,8 +742,6 @@
           <property name="ant.file" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/build.xml" />
 
           <property name="os.version" value="10.6.8" />
-
-          <property name="test_failure" value="true" />
 
           <property name="path.separator" value=":" />
 
@@ -796,7 +785,7 @@
 
           <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.uml.project90308.businesslogic.UserInfoTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/report/TEST-edu.uml.project90308.businesslogic.UserInfoTest.xml crashfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junitvmwatcher6568959171461848414.properties propsfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junit8640094538777599657.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.uml.project90308.businesslogic.UserInfoTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/report/TEST-edu.uml.project90308.businesslogic.UserInfoTest.xml crashfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junitvmwatcher7431756470314703765.properties propsfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junit929855022764386693.properties" />
 
           <property name="java.class.path" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/classes:/Users/pgmartin/UML/90.308/StockMarketPortfolio/lib/commons-io-2.4.jar:/Users/pgmartin/UML/90.308/StockMarketPortfolio/lib/junit-4.11-SNAPSHOT-20120416-1530.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant-launcher.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant-junit.jar" />
 
@@ -836,9 +825,9 @@
 
           <property name="ant.file.type.Stock Market Porfolio" value="file" />
 
-          <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext" />
-
           <property name="jboss.server.lib" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/${env.JBOSS_HOME}/server/default/lib" />
+
+          <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext" />
 
           <property name="env.com.apple.java.jvmTask" value="BundledApp.java" />
 
@@ -874,14 +863,14 @@
 
       <testcase classname="edu.uml.project90308.businesslogic.UserInfoTest" name="testStockConstruction" time="0.0" />
 
-      <testcase classname="edu.uml.project90308.businesslogic.UserInfoTest" name="testSetPassword" time="0.0" />
+      <testcase classname="edu.uml.project90308.businesslogic.UserInfoTest" name="testSetPassword" time="0.0010" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="2" hostname="peters-powermac-5.local" id="4" name="TestPerson" package="edu.uml.project90308.persistence" tests="9" time="0.068" timestamp="2012-10-05T20:53:54">
+  <testsuite errors="0" failures="2" hostname="peters-powermac-5.local" id="4" name="TestPerson" package="edu.uml.project90308.persistence" tests="9" time="0.067" timestamp="2012-10-05T21:28:20">
       <properties>
           <property name="java.vendor" value="Apple Inc." />
 
@@ -902,8 +891,6 @@
           <property name="ant.home" value="/Applications/IntelliJ IDEA 11.app/lib/ant" />
 
           <property name="java.runtime.version" value="1.6.0_35-b10-428-10M3811" />
-
-          <property name="env.JAVA_MAIN_CLASS_42959" value="com.intellij.rt.ant.execution.AntMain2" />
 
           <property name="env.Apple_PubSub_Socket_Render" value="/tmp/launch-wTM1qf/Render" />
 
@@ -932,6 +919,8 @@
           <property name="ant.project.default-target" value="all" />
 
           <property name="ant.project.name" value="Stock Market Porfolio" />
+
+          <property name="env.JAVA_MAIN_CLASS_43100" value="com.intellij.rt.ant.execution.AntMain2" />
 
           <property name="java.version" value="1.6.0_35" />
 
@@ -970,8 +959,6 @@
           <property name="ant.file" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/build.xml" />
 
           <property name="os.version" value="10.6.8" />
-
-          <property name="test_failure" value="true" />
 
           <property name="path.separator" value=":" />
 
@@ -1015,7 +1002,7 @@
 
           <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.uml.project90308.persistence.TestPerson filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/report/TEST-edu.uml.project90308.persistence.TestPerson.xml crashfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junitvmwatcher7082433632478741565.properties propsfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junit2790213920339535960.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner edu.uml.project90308.persistence.TestPerson filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/report/TEST-edu.uml.project90308.persistence.TestPerson.xml crashfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junitvmwatcher3791000668072983670.properties propsfile=/Users/pgmartin/UML/90.308/StockMarketPortfolio/junit2916044984403243118.properties" />
 
           <property name="java.class.path" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/build/classes:/Users/pgmartin/UML/90.308/StockMarketPortfolio/lib/commons-io-2.4.jar:/Users/pgmartin/UML/90.308/StockMarketPortfolio/lib/junit-4.11-SNAPSHOT-20120416-1530.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant-launcher.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant.jar:/Applications/IntelliJ IDEA 11.app/lib/ant/lib/ant-junit.jar" />
 
@@ -1055,9 +1042,9 @@
 
           <property name="ant.file.type.Stock Market Porfolio" value="file" />
 
-          <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext" />
-
           <property name="jboss.server.lib" value="/Users/pgmartin/UML/90.308/StockMarketPortfolio/${env.JBOSS_HOME}/server/default/lib" />
+
+          <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext" />
 
           <property name="env.com.apple.java.jvmTask" value="BundledApp.java" />
 
@@ -1110,7 +1097,7 @@
 
       <testcase classname="edu.uml.project90308.persistence.TestPerson" name="testIsAllLettersNegative" time="0.0" />
 
-      <testcase classname="edu.uml.project90308.persistence.TestPerson" name="testIsAllLetters" time="0.0020">
+      <testcase classname="edu.uml.project90308.persistence.TestPerson" name="testIsAllLetters" time="0.0010">
           <failure message="Expected exception: edu.uml.project90308.persistence.NameException" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expected exception: edu.uml.project90308.persistence.NameException
 </failure>
 
