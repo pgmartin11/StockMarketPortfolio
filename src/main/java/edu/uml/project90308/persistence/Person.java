@@ -9,26 +9,26 @@ import java.util.ArrayList;
  * @author Alan Derrick
  *
  * This class represents a person.  The kind of person it represents is an investor for our stock
- * program.  The person has a name, an email address, and tracks certain stock symbols.   This Person
- * will check to make sure the name is valid (contains only letters and spaces).  This person will also
- * check to make sure the email address passed to it is not a blank line.
+ * program.  The person has a userName, an password, and it tracks certain stock symbols.   This Person
+ * will check to make sure the userName is valid (contains only letters and spaces).  This person will also
+ * check to make sure the password passed to it is not a blank line.
  *
  */
 public class Person {
-    private String name;
-    private String email;
-    private ArrayList symbols;
+    private String userName;
+    private String password;
+    private ArrayList<String> symbols;
 
     /**
      * This constructor will accept various parameters and fill the new Person object
      *
      * @param name Name of the person
-     * @param email E-mail of the person
+     * @param password E-mail of the person
      * @param symbols An ArrayList of stock symbols the person is tracking
      */
-    public Person(String name, String email, ArrayList symbols) {
-        this.name = name;
-        this.email = email;
+    public Person(String name, String password, ArrayList<String> symbols) {
+        this.userName = name;
+        this.password = password;
         this.symbols = symbols;
     } // end constructor
 
@@ -37,98 +37,76 @@ public class Person {
      * constructor will create the Person object with the "default" values below
      */
 
-    /* TODO it is a really bad idea to provide construtors that allow you to create invalid instances of your class
-        use constructors to enforce the correct construction of your class by requiring the arguments needed to
-       properly initialize your class.
-    */
-    public Person() {
-
-        ArrayList symbolList = new ArrayList();
-        // add elements to the array list
-        symbolList.add("GOOG");
-
-        this.name = "Your mom";
-        this.email = "mom@gmail.com";
-        this.symbols = symbolList;
-    }
-
     public Person(String uname, String passwd) {
+        this.userName = uname;
+        this.password = passwd;
     }
 
     /**
-     * returns name of the Person
      *
-     * @return
+     * @return  returns userName of Person
      */
-    public String getName(){
-        return name;
+    public String getUserName(){
+        return userName;
     }
 
     /**
-     * returns email of the Person
      *
-     * @return
+     * @return password of the Person
      */
-    public String getEmail(){
-        return email;
+    public String getPassword(){
+        return password;
     }
 
     /**
-     * returns an ArrayList of the stock symbols the Person is tracking
      *
-     * @return
+     * @return an ArrayList of the stock symbols the Person is tracking
      */
     public ArrayList<String> getSymbol(){
         return symbols;
     }
 
     /**
-     * verifies the name only contains letters and white space, then sets the name
+     * verifies the userName only contains letters and white space, then sets the userName
      *
-     * @param name
+     * @param userName userName of Person object
      * @throws NameException
      */
-    public void setName(String name) throws NameException {
-        boolean isName = isAllLetters(name);
+    public void setUserName(String userName) throws NameException {
+        boolean isName = isAllLetters(userName);
 
-        if ( isName == true ) {
-            this.name = name;
+        if ( isName ) {
+            this.userName = userName;
+        } else {
+            throw new NameException();
         }
-        else {
-            throw new NameException("A name must only have letters and spaces.");
-        }
-    } // end setName
+    } // end setUserName
 
-    /**
-     * verifies the email address isn't a blank line, then sets the email address
-     *
-     * @param emailAddress
-     * @throws EmailAddressException
-     */
-    public void setEmail(String emailAddress) throws EmailAddressException {
-        boolean isAddress = isWhitespace(emailAddress);
-        if (!isAddress) {
-            this.email = emailAddress;
+
+    public void setPassword(String passwd) throws PasswordException  {
+        boolean containsWhitespace = isWhitespace(passwd);
+
+        if (containsWhitespace) {
+            throw new PasswordException();
+        } else {
+            this.password = passwd;
         }
-        else {
-            throw new EmailAddressException("An email address can't be a blank line.", new IllegalStateException());
-        }
-    } // end setEmail
+    }// end setPassword
 
     /**
      * sets the Person object's ArrayList to the passed ArrayList
      *
-     * @param stockSymbols
+     * @param stockSymbols ArrayList stockSymbols
      */
     public void setSymbols(ArrayList stockSymbols) {
         this.symbols = stockSymbols;
     }
 
     /**
-     * This method verifies the name contains only letters and whitespace
+     * This method verifies the userName contains only letters and whitespace
      *
-     * @param string
-     * @return
+     * @param string string passed in to verify if it only contains letters and whitespace
+     * @return boolean, true if string is only letters and whitespace
      */
     public boolean isAllLetters(String string){
         for(int x = 0 ; x < string.length();x++){
@@ -142,8 +120,8 @@ public class Person {
     /**
      * method to verify the string passed to it is not just a blank line
      *
-     * @param string
-     * @return
+     * @param string to be verified, that it isn't just a blank line
+     * @return true if the string has no whitespace
      */
     public static boolean isWhitespace(String string) {
         if (string == null) {
@@ -151,7 +129,7 @@ public class Person {
         }
         int sz = string.length();
         for (int i = 0; i < sz; i++) {
-            if ((Character.isWhitespace(string.charAt(i)) == false)) {
+            if ((!Character.isWhitespace(string.charAt(i)))) {
                 return false;
             } // end if
         } // end for loop
@@ -165,12 +143,12 @@ public class Person {
      *
      *      * only test public methods, but make sure you   unit test the methods that call these private methods
      *
-     * @param person
+     * @param person (the Person object to be written to file)
      */
     private void saveUser(Person person) {
         // writing object to file
         try {
-            FileOutputStream saveFile = new FileOutputStream(person.email);
+            FileOutputStream saveFile = new FileOutputStream(person.password);
             ObjectOutputStream save = new ObjectOutputStream(saveFile);
             save.writeObject(person);
             save.close();   // this also closes saveFile
@@ -190,12 +168,12 @@ public class Person {
      *
      * only test public methids, but make sure you   unit test the methods that call these private methods
      *
-     * @param person
-     * @return
+     * @param person (The person object to try & read from file)
+     * @return person1 (The person object actually returned from file)
      */
     private Person getUser(Person person) {
         try {
-            FileInputStream saveFile = new FileInputStream(person.email);
+            FileInputStream saveFile = new FileInputStream(person.password);
             ObjectInputStream restore = new ObjectInputStream(saveFile);
             // Object obj = restore.readObject();
             Person person1 = (Person) restore.readObject();
@@ -212,12 +190,12 @@ public class Person {
     /**
      * Overrides the object's toString method
      *
-     * @return
+     * @return a String probably for printing
      */
     @Override
     public String toString() {
-        return ("Name: " + this.name + ", Address: " + this.email +
-                ", Stock Symbol: " + this.symbols);
+        return ("UserName: " + this.userName + ", Password: " + this.password +
+                ", Stock Symbol(s): " + this.symbols);
     } // end toString
 
 } // end Person
