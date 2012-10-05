@@ -9,5 +9,9 @@ public class DataFactory {
         return new XMLReader();
     }
 
+    public static DataWriter getDataWriter() {
+        return new XMLReader();
+    }
+
 
 }
