@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <project name="Stock Market Porfolio" default="all" basedir=".">
+	<property file="build.properties"/>
 
     <property name="src.dir" value="src" description="project source code"/>
     <property name="lib.dir" value="lib" description="project libraries are found here"/>
     <property name="build.dir" value="build"
               description="anything this build script generates goes under this directory"/>
     <property name="classes.dir" value="${build.dir}${file.separator}classes"
-              description="Java class files compiled by this build script  go here"/>
+        	  description="Java class files compiled by this build script go here"/>  
+            
     <property name="report.dir" value="${build.dir}${file.separator}report"
               description="this directory is used by JUnit. Test results are placed here in a nice HTML format"/>
               
@@ -16,30 +18,31 @@
     <property name="dist.dir"  value="dist"/>         
           
                    
-	<!-- Set up JAVA_HOME and JBOSS_HOME system wide environment variables, and
-			may use the following three lines to set jdk.home and jboss.home 
+	<!-- Set up JAVA_HOME and CATALINA_HOME system wide environment variables, and
+			may use the following three lines to set jdk.home and tomcat.home 
 	-->
 	<property environment="env"/> 
 	<property name="jdk.home" location="${env.JAVA_HOME}"/>  <!-- need this? -->
-	<property name="jboss.home" location="${env.JBOSS_HOME}"/> 
+	<property name="tomcat.home" location="${env.CATALINA_HOME}"/> 
 				
-	<property name="jboss.deploy"		value="${jboss.home}/server/default/deploy/applications"/>
-	<property name="jboss.common.lib" 	value="${jboss.home}/common/lib"/>
-	<property name="jboss.server.lib" 	value="${jboss.home}/server/default/lib"/>
-	<property name="servlet.jar"  		value="${jboss.common.lib}/servlet-api.jar"/>
-	<property name="webapp.name" 		value="StockMarketPortfolio"/>
-	<property name="webapp.context.dir" value="${jboss.deploy}/${webapp.name}"/>
-	<echo message="webapp.context.dir:${webapp.context.dir}"/>
+	<property name="tomcat.deploy" value="${tomcat.home}${file.separator}webapps"/>
+	<!-- <property name="tomcat.lib" value="${tomcat.home}${file.separator}lib"/> -->
+	<!-- Use local copy of servlet-api.jar if Tomcat is not installed -->
+	<property name="tomcat.lib" value="${lib.dir}"/>
+	<property name="servletjar" value="${tomcat.lib}${file.separator}servlet-api.jar"/>
+	
+	<property name="webapp.name" value="${appname}" description="application name"/>
 
 
     <!-- this sets up the classpath for the project. Whenever you a .jar to the lib directory it will automatically be
         be added to the classpath
     -->
     <path id="project.classpath" description="the project's class path all third party libs are on it. ">
-        <pathelement path="${classes.dir}"/>
+        <pathelement location="${classes.dir}"/>
         <fileset dir="${lib.dir}">
             <include name="**/*.jar"/>
         </fileset>
+        <pathelement location="${servletjar}"/>
     </path>
 
 
@@ -49,22 +52,17 @@
         <delete dir="${classes.dir}"/>
         <delete dir="${report.dir}"/>
         <delete dir="${build.dir}"/>
-        	<!-- begin RSEG161 ant script code section --> 
-			<delete dir="${dist.dir}" />
-			<delete dir="${webapp.context.dir}" />
-			<delete file="${jboss.deploy}/StockMarketPortfolio.war"/>
-			<!-- end RSEG161 ant script code section -->
+		<delete dir="${dist.dir}" />
+		<delete dir="${webapp.context.dir}" />
+		<delete file="${tomcat.deploy}${file.separator}${webapp.name}.war"/>
     </target>
 
     <target name="init" description="Build initialization - create output directories" depends="clean">
         <mkdir dir="${build.dir}"/>
         <mkdir dir="${classes.dir}"/>
         <mkdir dir="${report.dir}"/>
-        	<!-- begin RSEG161 ant script code section -->
-        	<mkdir dir="${dist.dir}" />
-        	<mkdir dir="${jboss.deploy}"/>
-			<mkdir dir="${webapp.context.dir}" />
-			<!-- end RSEG161 ant script code section -->
+        <mkdir dir="${dist.dir}" />
+        <mkdir dir="${tomcat.deploy}"/>
     </target>
 
     <target name="compile" description="Compile all the code; produce classes" depends="init">
@@ -106,42 +104,36 @@
 	<!-- WAR rules -->
 	<target name="war" depends="compile">
 		<echo>building war...</echo>
-		<war warfile="${dist.dir}/StockMarketPortfolio.war" webxml="${web.dir}/WEB-INF/web.xml">
+		<war warfile="${dist.dir}${file.separator}${webapp.name}.war" webxml="${web.dir}${file.separator}WEB-INF${file.separator}web.xml">
 			<fileset dir="${web.dir}">
-      	<patternset>
-        	<exclude name="**/WEB-INF/web.xml"/>
-					<include name="**/WEB-INF/jboss-web.xml"/>
+      			<patternset>
+        			<exclude name="**/WEB-INF/web.xml"/>
+					<exclude name="**/WEB-INF/jboss-web.xml"/>
 					<include name="**/*.html"/>
 					<include name="**/*.jpg"/>
 					<include name="**/*.gif"/>
+					<include name="**/*.jsp"/>
 					<exclude name="**/*.java"/>
-        </patternset>
-      </fileset>
+        		</patternset>
+      		</fileset>
 			<fileset dir="${src.dir}">
 				<include name="**/*.jsp"/>
 				<include name="**/*.html"/>
 			</fileset>
-      <classes dir="${build.dir}"/>
+      		<classes dir="${classes.dir}"/>
+      		<lib dir="${lib.dir}"/>
 		</war>
 	</target>
 	
 	<!-- Deployment rule -->
 	<target name="deploy" depends="war">
 		<echo>copying war file to deployment dir...</echo>
-		<copy file="${dist.dir}/StockMarketPortfolio.war" todir="${jboss.deploy}" 
+		<copy file="${dist.dir}${file.separator}${webapp.name}.war" todir="${tomcat.deploy}" 
 			overwrite="true"/>
 	</target>
 	
-	<target name="explode" depends="deploy">
-	  <echo>Providing the exploded verison of war file in deployment dir...</echo>
-			<unwar src="${jboss.deploy}/StockMarketPortfolio.war"
-       	dest="${webapp.context.dir}">
-			</unwar>
-	</target>
-	
-
     <!-- this is the default target - it does everything -->
-    <target name="all" depends="init, clean, compile, test, war, deploy"
+    <target name="all" depends="init, clean, compile, test"
             description="deletes previous work, compiles new class, runs hello program"/>
 
 </project>

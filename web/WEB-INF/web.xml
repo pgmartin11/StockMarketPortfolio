@@ -5,7 +5,18 @@
          xsi:schemaLocation=
            "http://java.sun.com/xml/ns/j2ee web-app_2_4.xsd"
          version="2.4">
-  <display-name>Stock Market Portfolio</display-name>
+         
+	<display-name>Stock Market Portfolio</display-name>
+  
+	<servlet>
+    	<servlet-name>StockQuoteServlet</servlet-name>
+    	<servlet-class>edu.uml.project90308.presentation.StockQuoteServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+    	<servlet-name>StockQuoteServlet</servlet-name>
+    	<url-pattern>/getStockQuote</url-pattern>
+	</servlet-mapping>
 	 
 <!--  <welcome-file-list>
     <welcome-file>index.html</welcome-file>
