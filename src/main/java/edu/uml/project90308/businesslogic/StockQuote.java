@@ -6,7 +6,7 @@ import java.io.*;
 import org.apache.commons.io.IOUtils;
 
 public class StockQuote {
-    public static StringWriter getQuote(String sym) throws Exception {
+    public static String getQuote(String sym) throws Exception {
 
         String params = "sl1d1t1c1ohgv";
         String theUrl = "http://download.finance.yahoo.com/d/quotes.csv?s=" + sym + "&f=" + params;
@@ -18,7 +18,7 @@ public class StockQuote {
         stringWriter = new StringWriter();
         IOUtils.copy(inputStream, stringWriter);
 
-        return stringWriter;
+        return stringWriter.toString();
 
     }
 
