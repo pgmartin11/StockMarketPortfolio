@@ -4,8 +4,9 @@
 	</head>
 	
 	<body>
+	<h2>Stock Market Portfolio</h2>
 		<form action="getStockQuote" method="get">
-    		Stock Symbol: <input type="text" name="stocksymbol">
+    		Stock symbol: <input type="text" name="stocksymbol">
     		<input type="submit">
 		</form>
 	</body>
